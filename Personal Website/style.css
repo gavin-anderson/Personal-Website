@@ -262,7 +262,7 @@ html {
   color: #fff;
   text-transform: uppercase;
   position: absolute;
-  top: 0rem;
+  top: 1.5rem;
   left: 10rem;
 }
 
@@ -477,6 +477,23 @@ html {
   word-wrap: break-word;
 
 }
+.about-me-list{
+  left: 15rem;
+  width: 80%;
+  position: relative;
+  color: white;
+  
+}
+
+.about-me-list-item{
+  list-style-type: circle;
+  word-wrap: normal;
+  font-size: 2rem;
+  font-weight: 700;
+  padding-right: 10rem;
+  padding-bottom: 3rem;
+  
+}
 
 .link {
   color: cyan;
@@ -495,6 +512,7 @@ html {
 }
 .past-experience-column {
   top: 0rem;
+  left: -5rem;
   width: 80%;
   position: relative;
 }
@@ -565,7 +583,7 @@ html {
   width: 80%;
   position: relative;
   color: white;
-  font-size: 2rem;
+  font-size: 1.75rem;
   font-weight: 150;
   top: 0rem;
   left: 40rem;
@@ -671,4 +689,5 @@ html {
 .light{
   filter: brightness(1.5);
 }
+/* Responsive */
 

@@ -168,13 +168,16 @@ const checkLength=(input, min)=>{
 };
 
 form.addEventListener("submit",e=>{
-  e.preventDefault();
   checkLength(username,2);
   checkLength(subject,2);
   checkLength(message,10);
   checkEmail(email);
   checkRequiredFields([username, email, subject, message]);
 
+  const notValid=Array.from(errorMessage).find((message)=>{
+    return message.classList.contains("error")
+  });
+  notValid && e.preventDefault();
 });
 
 const checkEmail=(input)=>{
@@ -187,6 +190,9 @@ const checkEmail=(input)=>{
     error(input,"Email is not valid");
   }
 }
+
+
+
 // SlideShow
 const slideShow=document.querySelector('.slideshow');
 
